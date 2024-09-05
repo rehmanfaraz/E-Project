@@ -1,0 +1,194 @@
+.card-container, .card-container1 {
+    display: flex;
+    overflow-x: hidden; 
+    padding: 10px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; 
+}
+
+
+.card {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for cards */
+    height: 400px; /* Fixed height for cards */
+    margin: 10px;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    height: 220px; /* Adjusted height */
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.card .details {
+    padding: 12px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .details a {
+    text-decoration: none;
+}
+
+.card .details h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: rgb(0, 96, 141);
+    font-family: rubik, sans-serif;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card .details p {
+    color: rgb(0, 96, 141);
+    font-size: 12px;
+    font-family: rubik, sans-serif;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card .price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: auto;
+}
+
+.card .price-container .price {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: rubik, sans-serif;
+}
+
+.card .price-container .old-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 12px;
+    font-family: rubik, sans-serif;
+}
+
+.card .price-container .save {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: rubik, sans-serif;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.no-select {
+    user-select: none; 
+}
+
+.brand-link {
+    text-decoration: none; 
+    color: rgb(0, 96, 141); 
+    display: flex; 
+    justify-content: center; 
+}
+
+.brand-link h4 {
+    margin: 0; 
+    font-size: 16px; 
+    font-family: rubik, sans-serif; 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .card-container, .card-container1 {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 10px;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+    }
+    
+    .card {
+        width: 240px; /* Reduced width for tablets */
+        height: 320px; /* Reduced height for tablets */
+    }
+
+    .card img {
+        height: 180px; /* Reduced height for images on tablets */
+    }
+
+    .card .details h4 {
+        font-size: 14px; /* Reduced font size for product name */
+    }
+
+    .card .details p {
+        font-size: 10px; /* Reduced font size for description */
+    }
+
+    .card .price-container .price,
+    .card .price-container .old-price,
+    .card .price-container .save {
+        font-size: 14px; /* Reduced font size for price */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-container, .card-container1 {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 10px;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+    }
+    
+    .card {
+        width: 200px; /* Further reduced width for mobile */
+        height: 280px; /* Further reduced height for mobile */
+    }
+
+    .card img {
+        height: 150px; /* Further reduced height for images on mobile */
+    }
+
+    .card .details h4 {
+        font-size: 12px; /* Further reduced font size for product name */
+    }
+
+    .card .details p {
+        font-size: 8px; /* Further reduced font size for description */
+    }
+
+    .card .price-container .price,
+    .card .price-container .old-price,
+    .card .price-container .save {
+        font-size: 12px; /* Further reduced font size for price */
+    }
+}

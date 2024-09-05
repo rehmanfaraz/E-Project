@@ -1,0 +1,163 @@
+.left-aligned-header {
+    text-align: left;
+    font-size: 27px; /* Adjust the font size as needed */
+    font-family: coco, sans-serif; /* You can change the font family as needed */
+    background-color: rgb(234, 241, 245);
+    padding: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 65px;
+  }
+  .map-container {
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    border: 2px solid #1b4085;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .location-paragraph {
+    background-color: rgb(240, 240, 240);
+    padding: 40px;
+    text-align: left;
+    margin: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 90%;
+    align-items: center;
+    font-family: rubik;
+ 
+  }
+  .paragraph-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #424242;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: century;
+  }
+  
+  .btn-link::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    display: block;
+    margin-left: auto;
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+  }
+  
+  .btn-link.collapsed::after {
+    transform: rotate(90deg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-link:focus, .btn-link:hover {
+    text-decoration: none;
+    color: #535353;
+  }
+  
+  .btn-link:focus {
+    outline: none;
+  }
+  .card-body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+    background-color: rgb(245, 245, 245);
+  }
+
+#faq{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    font-family: century;
+}
+
+.head {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Zolina';
+  color: rgb(5, 14, 63);
+}
+
+hr {
+  height: 50px;
+}
+
+.text1,
+.text2 {
+  font-size: 25px;
+  width: 100%;
+  text-align: justify;
+  font-family: arial ;
+  margin-top: 20px;
+}
+
+.headings,
+.headings1 {
+  font-size: 30px;
+  color: rgb(10, 13, 52);
+  text-align: center;
+  font-family: 'Coco', sans-serif;
+  background-color: rgb(234, 241, 245);
+  padding: 35px 0 35px 65px; /* Combined padding for consistency */
+  margin: 8px 0; /* Combined margin for consistency */
+  width: 100%;
+}
+.container {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 15px;
+}
+
+.card-header button {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  background: none;
+  border: none;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.card-header button:hover {
+  color: #007bff;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #d1d1d1;
+}
+
+strong {
+  color: #333;
+}
